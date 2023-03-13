@@ -1,3 +1,10 @@
+<?php
+// Strick Mode
+declare(strict_types = 1);
+require_once 'includes/autoloader.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +14,25 @@
     <title>Practice Classes In PHP</title>
 </head>
 <body>
-    
+    <?php 
+
+    $house1 = new House\House;
+    $house1->house = 'Gulf Light';
+    echo $house1->address();
+
+    try{
+
+        $person1 = new Person\Person;
+        $person1->set_person('Vidusha');
+        echo $person1->get_person();
+    }catch(TypeError $e){
+        echo 'Error' . $e->getMessage();
+    }
+
+    $person1 = new Person\Person;
+    $person1->set_person('Vidusha');
+    echo $person1->get_person();
+
+    ?>
 </body>
 </html>
