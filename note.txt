@@ -1,0 +1,9 @@
+-- Four Principle of OOP
+
+- Encapsulation - Holds things Together
+- Abstraction - Abstract - to be less specific
+- Inheritance - Coping some functionality get something from parent class
+- Polymorphism - many forms - one function can work differently depending on the situation
+
+Access Modifiers
+Public | Protected | Private | Static 
